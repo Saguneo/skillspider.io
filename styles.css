@@ -1,0 +1,155 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*Styling Begins*/
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(156 163 175);
+}
+
+a:hover {
+  color: white;
+}
+
+.nav-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spider-logo {
+  width: 45px;
+  transform: rotate(180deg);
+}
+
+.nav-items {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.login-signup {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.signup {
+  padding: 0.1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(255 251 235),
+    rgb(168 85 247)
+  );
+}
+
+.signup:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(255 251 235),
+    rgb(255 251 235)
+  );
+}
+
+.signup a {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.coming-soon {
+  margin-top: 5rem;
+  font-size: 45px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255 251 235),
+    rgb(168 85 247)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
